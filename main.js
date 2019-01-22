@@ -24,7 +24,7 @@ const porta = argv.port || 3000
 if ((argv.lat1 != undefined) && (argv.long1 != undefined) && (argv.lat2 != undefined) && (argv.long2 != undefined)){
     // usa o request para fazer a requisição a api do google e passa os parâmetros 
     request({
-        url: `https://maps.googleapis.com/maps/api/distancematrix/json?units=metrics&origins=${argv.lat1},${argv.long1}&destinations=${argv.lat2},${argv.long2}&key=AIzaSyCFabjNy2aWJxNYSx-bGvyemYsbtOOaCDs`,
+        url: `https://maps.googleapis.com/maps/api/distancematrix/json?units=metrics&origins=${argv.lat1},${argv.long1}&destinations=${argv.lat2},${argv.long2}&key=YOUR API KEY`,
         json: true
         }, (error, res, body) => {
             // verifica se houve resposta positiva da api google, i.e, se as coordenadas estão corretas e se houve o calculo
